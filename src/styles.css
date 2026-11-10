@@ -1217,3 +1217,27 @@ kbd {
   .cam-board { width: 196px; height: 196px; padding: 18px; }
   .cam-lens { width: 156px; height: 156px; }
 }
+
+/* ── Terminal: quick buttons ───────────────── */
+
+.term-quick {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  overflow-x: auto;
+  background: #0d1611;
+  border-bottom: 1px solid var(--ic-edge);
+  scrollbar-width: thin;
+}
+.term-chip {
+  flex: none;
+  padding: 6px 12px;
+  border: 1px solid var(--copper-dim);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--silk);
+  font: 500 13px/1.2 var(--body);
+  cursor: pointer;
+}
+.term-chip:hover { border-color: var(--copper); background: rgba(217, 164, 65, 0.12); }
+.term-input input::placeholder { color: #4f6656; }
